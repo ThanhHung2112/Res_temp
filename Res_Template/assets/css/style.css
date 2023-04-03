@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    float: left;
+    position: static;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    float: left;
+    max-height: 600px;
+}
+
+#header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header a img {
+    margin: 10px;
+    padding-top: 0;
+    width: 80%;
+    position: relative;
+}
+
+.nav-item {
+    display: inline;
+    /* justify-content: left; */
+    align-items: left;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+
+.nav-item a.active {
+    background: #D5E6FB;
+    color: #0060FF;
+    border-bottom: #0060FF solid ;
+    /* border-left: #0060FF solid ; */
+
+    border-radius: 20px;
+}
+.nav-item a:hover {
+    background: #f1f8ff;
+    color: #0060FF;
+    border-bottom: #0060FF solid ;
+    border-radius: 20px;
+    
+}
+
+
+.nav-item a.active::after {
+    content: "";
+    width: 5px;
+    height: 6%;
+    background: #0060FF;
+    position: absolute;
+    left: -1px;
+}
+.nav-item a {
+    display: block;
+    /* width: 200px; */
+
+    color: #1A1A1A;
+    font-size: 16px;
+
+}
+.nav-item a i {
+    display: block;
+    /* font-size: 18px; */
+    justify-content: start;
+    align-items: start;
+    width: 15px;
+    padding: 0;
+    margin: 0 15px ;
+    font-weight:  bolder;
+}
+.nav-item a span {
+    display: block;
+    width: 120px;
+}
+
+/* Body page - Main content */
+/* Tool nav */
+.icon-bar {
+    font-size: 30px;
+}
+
+
+.user-account {
+    background-color: #DBE7F5;
+    margin: 0 20px;
+
+}
+
+.avatar {
+    width: 75px;
+    margin: 5px 0 5px 5px;
+    border-radius: 50%;
+}
+
+.user-account p {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 100px;
+}
+
+.user-account p i {
+    font-size: 7px;
+    padding: 7px;
+    color: #2ED530;
+}
+
+.user-account .email {
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 100;
+}
+
+/* Tool nav end*/
+
+/* Main content */
+#table-view {
+    background-color: #D5E6FB;
+    width: 100%;
+    height: 90vh ;
+    /* float: left; */
+}
+#table-view div div a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Table */
+.table-num {
+    
+    background-color:#FFFFFF;
+    /* padding: 10px; */
+    border: 12px solid #F4C35A;
+    border-radius: 30px;
+    /* position: absolute; */
+    width: 160px;
+    height: 100px;
+    left: 352px;
+    top: 258px;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+.non-cus {
+    border: 12px solid green;
+}
+.table-num h5,
+.table-num h6,
+.table-num p {
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.table-num h5 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 0 0 0;
+}
+.table-num p {
+    font-size: 12px;
+    /* margin: 5px; */
+}
+
+.table-num h6 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+/* Button secsion */
+.button-sesion {
+    justify-content: center;
+
+    padding: 20px 0 ;
+    margin: auto;
+}
+.button-sesion button {
+    margin: 0 3px ;
+    width: 140px;
+}
+
+/* Table Status */
+.display-table-status {
+    background-color:#FFFFFF ;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.display-table-status div {
+    margin: 0px 10px;
+}
+.non-cus-icon {
+    color: green;
+}
+.full-cus-icon {
+    color: #F4C35A;
+}
+
+#table-infomation {
+    display: flex;
+    float: right;
+}
